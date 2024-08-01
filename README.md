@@ -28,20 +28,22 @@ jQuery had the nice bonus of cleaning up the previous code by abstracting away t
 
    4. Edit your post and switch from compose to HTML mode (buttons above the editor). Try out this sample.
 ```html
-      <pre class="markdown">
-      #Woo hoo!
-      [Markdown](http://daringfireball.net/projects/markdown/) is cool!
-      ```javascript
-          // Verify code highlighting
-          if (today==rainy) {
-            return false;
-          }
-      ```
-      </pre>
+<pre class="markdown">
+# Woo hoo!
+
+[Markdown](http://daringfireball.net/projects/markdown/) is cool!
+
+```javascript
+// Verify code highlighting
+if (today==rainy) {
+return false;
+}
+```
+</pre>
 ```
    5. Any HTML **pre** tags with the class **markdown** are converted by showdown. After this any HTML code tags in the generated HTML are highlighted by highlightJS. 
 
-   6. Remember to escape your &amp; with &amp;amp;, < with &amp;lt; and > with &amp;gt;.
+   6. Remember to escape your &amp; with &amp;amp;, < with &amp;lt; and > with &amp;gt;. Also remember to not include tabulations and ensure markdown is formatted correctly, you can verify it using a markdown editor.
 
    6. Save your post. Preview or Publish the post.
    7. Now go and start [mastering Markdown at Github](https://guides.github.com/features/mastering-markdown/)
